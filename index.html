@@ -30,8 +30,14 @@
             <h1>NuCamp</h1>
             <h2>a better way to camp</h2>
           </div>
+          <div class="col-4 col-xl-2">
+           <a href="#reserve"> <button type="button" class="btn btn-info" id="reserveForm">Reserve Campsite
+              
+            </button></a>
+          </div>
         </div>
       </div>
+      
     </header>
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
@@ -45,13 +51,13 @@
         <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i>Home</a></li>
         <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i>About</a></li>
         <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i>Site</a></li>
-        <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address fa-lg"></i>Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i>Contact</a></li>
       </ul>
       </div>
       </div>
     </nav>
     <div class="container">
-      <div class="row row-content align items center">
+      <div class="row row-content align-items-center">
         <div class="col-sm-4 order-sm-last col-md-3">
           <h2 class="text-sm-right ">Discover & Review</h2>
         </div>
@@ -66,7 +72,7 @@
                 </div>
             </div>
         
-          <div class="row row-content align items center">
+          <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
               <h2>Featured Campsites</h2>
             </div>
@@ -74,13 +80,15 @@
               <div class="media">
                 <div class="media-body align-self-center">
             <h3>React Lake Campground</h3>
+            <div class= "d-none d-sm-block">
             <p>
               Nestled in the foothills of the Chrome Mountains, this campground
               on the shores of the pristine React Lake is a favorite for fly
               fishers.
             </p>
             </div>
-            <img class="d-flex mr-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake"/>
+            </div>
+            <img class="d-flex m-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake"/>
             </div>
           </div>
         </div>
@@ -101,6 +109,49 @@
           </p>
           </div>
           </div>
+        </div>
+      </div>
+      <div class="row row-content ">
+        <div class="col-sm-6 mx-auto">
+          <div class="card">
+            <h3 class="p-3 mb-2 bg-info text-white text-decoration-none" id="reserve">
+              Reserve a Campsite
+
+            </h3>
+            <div class="card-body">
+              <form id="reserveForm">
+                <div class="row">
+                  <label class="col-sm-6"> Number of Campers</label>
+                    <div class="col-sm-6">
+                    <select>
+                        <option> <select id="numCampers"></select></option>
+                         <option value="1"></option>
+                          <option value="2"></option>
+                           <option value="3"></option>
+                            <option value="4"></option>
+                             <option value="5"></option>
+                              <option value="6"></option>
+                    </select>
+                    </div>
+                  
+                </div>
+                <div class="row">
+                  <label class="col-sm-6 "> Date</label>
+                  <div class="col-sm-6">
+                  <input id="date" type="date" name="date" value="placeholder">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <button type="submit" class="btn btn-primary">Search</button>
+
+                  </div>
+
+                </div>
+                </form>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
