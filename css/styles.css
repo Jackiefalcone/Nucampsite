@@ -60,3 +60,9 @@ a:hover {
   bottom: 0;
   z-index: 100;
 }
+#carouselButton {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  z-index: 100;
+}
